@@ -1,0 +1,39 @@
+# Wiki de Testing - .gitignore
+
+# Archivos legacy (deprecated)
+app.js
+data.js
+content/
+!src/data/
+
+# Archivos temporales
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Documentos de trabajo (opcional)
+VERIFICACION.js
+content-placeholder.html
+ESTRUCTURA.html
+INICIO.html
+INDICE.md
+RESUMEN.md
