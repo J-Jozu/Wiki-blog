@@ -61,12 +61,12 @@ class AppController {
         });
 
         // Cambios en el hash de la URL (botones atrás/adelante del navegador)
-        window.addEventListener('hashchange', () => {
-            const hash = window.location.hash.substring(1);
-            if (hash) {
-                this.navigateToSection(hash, false);
-            }
-        });
+        globalThis.addEventListener('hashchange', () => {
+    const hash = globalThis.location.hash.substring(1);
+    if (hash) {
+        this.navigateToSection(hash, false);
+    }
+});
 
         console.log('📡 Event listeners configurados');
     }
