@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     try {
         // Inicializar aplicación a través del controlador
-        window.app = new AppController();
+        globalThis.app = new AppController();
         
         console.log('🎉 Aplicación lista para usar');
     } catch (error) {
@@ -32,5 +32,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Exponer versión de la aplicación
-window.APP_VERSION = '2.0.0-MVC';
-console.log(`📦 Wiki de Testing v${window.APP_VERSION}`);
+globalThis.APP_VERSION = '2.0.0-MVC';
+console.log(`📦 Wiki de Testing v${globalThis.APP_VERSION}`);
