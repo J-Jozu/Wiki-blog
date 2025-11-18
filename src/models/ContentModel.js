@@ -4,15 +4,15 @@
  */
 
 class ContentModel {
-    constructor() {
-        // Mapeo de IDs a contenido (importado desde data/)
-        this.contentMap = {
-            'niveles': typeof nivelesContent !== 'undefined' ? nivelesContent : null,
-            'integracion': typeof integracionContent !== 'undefined' ? integracionContent : null,
-            'tipos': typeof tiposContent !== 'undefined' ? tiposContent : null,
-            'cambio': typeof cambioContent !== 'undefined' ? cambioContent : null
-        };
-    }
+constructor() {
+    // Mapeo de IDs a contenido (importado desde data/)
+    this.contentMap = {
+        'niveles': typeof nivelesContent === 'undefined' ? null : nivelesContent,
+        'integracion': typeof integracionContent === 'undefined' ? null : integracionContent,
+        'tipos': typeof tiposContent === 'undefined' ? null : tiposContent,
+        'cambio': typeof cambioContent === 'undefined' ? null : cambioContent
+    };
+}
 
     /**
      * Obtiene el contenido HTML de una sección
