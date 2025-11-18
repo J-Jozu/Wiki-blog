@@ -75,7 +75,7 @@ class AppController {
      * Carga el contenido inicial basado en el hash de la URL
      */
     loadInitialContent() {
-        const hash = window.location.hash.substring(1);
+        const hash = globalThis.location.hash.substring(1);
         const initialSection = hash || this.navigationModel.getDefaultSectionId();
         this.navigateToSection(initialSection);
     }
@@ -99,7 +99,7 @@ class AppController {
         
         // Actualizar URL hash si es necesario
         if (updateHash) {
-            window.location.hash = sectionId;
+            globaThis.location.hash = sectionId;
         }
     }
 
